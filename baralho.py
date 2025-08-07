@@ -28,7 +28,16 @@ def distribuir(monte: list, qntd: int) -> list:
         qntd = qntd - 1
     return resp
 
+#MAIN
+if __name__ == "__main__":
+    deck = criar()
+    print(deck)
 
+    embaralhar(deck)
+    print(deck)
+
+    mao_poker = distribuir(deck, 5)
+    print(mao_poker)
 
 criar()        
                                
